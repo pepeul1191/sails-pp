@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=%></title>
+    <link rel="shortcut icon" href="<%= sails.config.globals.statics_url%>assets/site/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Inicio Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!-- Fin Fonts -->
+    <!-- Inicio CSS-->
+    <link rel="stylesheet" type="text/css" href="<%= sails.config.globals.statics_url%>bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= sails.config.globals.statics_url%>bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- Inicio Beyond-->
+    <link id="beyond-link" href="<%= sails.config.globals.statics_url%>beyond/assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="<%= sails.config.globals.statics_url%>beyond/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="<%= sails.config.globals.statics_url%>beyond/assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="<%= sails.config.globals.statics_url%>beyond/assets/css/animate.min.css" rel="stylesheet" />
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <link rel="stylesheet" type="text/css" href="<%= sails.config.globals.statics_url%>assets/site/css/styles.css" />
+    <!-- Inicio Load_CSS-->
+    <%- helper.loadCss()%>
+    <!-- Fin CSS-->
+</head>
+<body>
+        <!-- Inicio Modal -->
+    <button type="button" class="btn btn-primary btn-lg oculto" data-toggle="modal" data-target="#modal-container"  id="btnModal" >Launch demo modal</button>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+    <!-- Fin Modal -->
+    <!-- Loading Container
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+     /Loading Container -->
+    <!-- Page Body -->
+    <%- body %>
+    <!-- Main Container -->
+    <!-- Inicio JS-->
+    <script src="<%= sails.config.globals.statics_url%>bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>bower_components/underscore/underscore-min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>swp/js/mootools-core.min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>swp/js/mootools.min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>swp/js/mootools-interfaces.min.js" type="text/javascript"></script>
+    <script src="<%= sails.config.globals.statics_url%>assets/site/js/app.js" type="text/javascript"></script>
+    <!-- Inicio Beyond-->
+    <script src="<%= sails.config.globals.statics_url%>beyond/assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="<%= sails.config.globals.statics_url%>beyond/assets/js/beyond.js"></script>
+    <!-- Inicio Load_JS-->
+    <%- helper.loadJs()%>
+    <!-- Fin JS-->
+</body>
+</html>
